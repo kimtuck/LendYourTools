@@ -1,0 +1,17 @@
+
+
+<div>
+    GOOGLE MAPS
+    <div>
+        {{ coords.lat }} <br>
+        {{ coords.long }}
+    </div>
+
+    </div>
+    <google-map center="map.center" zoom="map.zoom">
+        <marker coords="map.center"
+                icon="pin">
+        </marker>
+
+    </google-map>
+</div>
