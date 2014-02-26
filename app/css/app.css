@@ -1,33 +1,45 @@
+.angular-google-map {
+  border: solid red 1px;
+}
+.angular-google-map-container {
+  width: 900px;
+  height: 500px;
+  border: solid yellow 1px;
+}
+.xgooglemapsdemo .map {
+  border: solid red 1px;
+  height: 100%;
+  width: 100%;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+.xgooglemapsdemo .map .angular-google-map-container {
+  height: 400px;
+  width: 400px;
+}
 /* app css stylesheet */
-
-
-.angular-google-map-container { height: 400px;  width: 300px; border: solid green 1px; }
-
-
+.xxx {
+  border: solid green 3px;
+}
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
   margin-bottom: 2em;
   padding: 0 0 0.5em;
 }
-
 .menu:before {
   content: "[";
 }
-
 .menu:after {
   content: "]";
 }
-
 .menu > li {
   display: inline;
 }
-
 .menu > li:before {
   content: "|";
   padding-right: 0.3em;
 }
-
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
