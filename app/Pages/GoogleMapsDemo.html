@@ -11,20 +11,26 @@
 
 <div>
     <div id="map">
+        {{map.markers}}
     <google-map id="map-canvas" center="map.center" zoom="map.zoom" events="map.events" options="map.options">
-        <marker id="m"
-                coords="map.marker.coords"
-                icon="map.pin"
-                showwindow="true"
-                options="map.marker.options"
-                events="map.marker.events">
-            <window templateUrl='HTML/template.html'>hello</window>
-        </marker>
-        <!-- window show="map.infoWindow.show" coords="map.infoWindow.coords" isIconVisibleOnClick="false">
-            I should not be attached to a
-            marker.
-        </window -->
+        <!--div ng-repeat="l in map.markers">
+            <marker id="m2"
+                    coords="l.coords"
+                    icon="map.pin"
+                    showwindow="true"
+                    options="l.options"
+                    events="l.events">
+                <window templateUrl='HTML/template.html'>hello</window>
+            </marker>
+        </div-->
+        <div x-directive maplocation marker="map.marker"></div>
     </google-map>
+
+    <div>
+
+        <button ng-click="homeclick">Home Location</button>
+        <button>Close Intersection</button>
+    </div>
 
 
     </div>
